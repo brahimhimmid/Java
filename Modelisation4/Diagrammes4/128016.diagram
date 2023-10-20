@@ -1,0 +1,182 @@
+format 224
+
+classcanvas 128016 class_ref 128016 // Controleur
+  classdiagramsettings member_max_width 0 end
+  xyzwh 752 102 2000 315 107
+end
+classcanvas 128144 class_ref 128144 // Ihm
+  classdiagramsettings member_max_width 0 end
+  xyz 506 47 2000
+end
+classcanvas 128272 class_ref 128272 // Grille
+  classdiagramsettings member_max_width 0 end
+  xyz 529 665 2000
+end
+classcanvas 128400 class_ref 128400 // Joueur
+  classdiagramsettings member_max_width 0 end
+  xyz 1147 50 2000
+end
+classcanvas 129424 class_ref 135056 // PartieJeuNim
+  classdiagramsettings member_max_width 0 end
+  xyz 1092 343 2000
+end
+classcanvas 129552 class_ref 135184 // PartieP4
+  classdiagramsettings member_max_width 0 end
+  xyz 566 334 2005
+end
+classcanvas 129680 class_ref 135312 // <<interface>> IJeu
+  classdiagramsettings member_max_width 0 end
+  xyz 821 281 2000
+end
+classcanvas 130064 class_ref 141840 // Tas
+  classdiagramsettings member_max_width 0 end
+  xyzwh 859 666 2000 225 155
+end
+classcanvas 130192 class_ref 141968 // CoupNim
+  classdiagramsettings member_max_width 0 end
+  xyzwh 1186 705 2000 143 101
+end
+classcanvas 132880 class_ref 148496 // <<interface>> ICoupP4
+  classdiagramsettings member_max_width 0 end
+  xyz 320 444 2000
+end
+classcanvas 133008 class_ref 149008 // CoupColonne
+  classdiagramsettings member_max_width 0 end
+  xyz 378 561 2000
+end
+classcanvas 133136 class_ref 149136 // CoupRotation
+  classdiagramsettings member_max_width 0 end
+  xyz 252 642 2000
+end
+classcanvas 134160 class_ref 155664 // <<interface>> IStrategieIANim
+  classdiagramsettings member_max_width 0 end
+  xyz 1367 391 2000
+end
+classcanvas 134288 class_ref 155792 // StrategieRandom
+  classdiagramsettings member_max_width 0 end
+  xyz 1386 552 2000
+end
+classcanvas 134672 class_ref 162320 // CoupIA
+  classdiagramsettings member_max_width 0 end
+  xyz 133 515 2000
+end
+classcanvas 135056 class_ref 162448 // <<interface>> IStrategieIAP4
+  classdiagramsettings member_max_width 0 end
+  xyz 63 747 2005
+end
+classcanvas 136464 class_ref 169488 // CoupColonneIA
+  classdiagramsettings member_max_width 0 end
+  xyz 126 881 2000
+end
+classcanvas 136592 class_ref 169616 // CoupRotationIA
+  classdiagramsettings member_max_width 0 end
+  xyz 27 982 2000
+end
+classcanvas 136976 class_ref 176144 // IA
+  classdiagramsettings member_max_width 0 end
+  xyz 1449 135 2000
+end
+relationcanvas 128784 relation_ref 128016 // <association>
+  from ref 128144 z 2001 to ref 128016
+  no_role_a no_role_b
+  multiplicity_a_pos 734 132 3000 multiplicity_b_pos 678 116 3000
+end
+relationcanvas 128912 relation_ref 128144 // <association>
+  from ref 128016 z 2001 to ref 128400
+  no_role_a no_role_b
+  multiplicity_a_pos 1129 142 3000 multiplicity_b_pos 1076 149 3000
+end
+relationcanvas 129808 relation_ref 134928 // <generalisation>
+  from ref 129424 z 2001 to ref 129680
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129936 relation_ref 135056 // <generalisation>
+  from ref 129552 z 2006 to ref 129680
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130576 relation_ref 141712 // <association>
+  from ref 128272 z 2006 to ref 129552
+  no_role_a no_role_b
+  multiplicity_a_pos 650 586 3000 multiplicity_b_pos 650 643 3000
+end
+relationcanvas 130704 relation_ref 141840 // <association>
+  from ref 130064 z 2001 to ref 129424
+  no_role_a no_role_b
+  multiplicity_a_pos 1096 523 3000 multiplicity_b_pos 995 644 3000
+end
+relationcanvas 130960 relation_ref 142096 // <association>
+  decenter_begin 500
+  from ref 129680 z 2001 to ref 128016
+  no_role_a no_role_b
+  multiplicity_a_pos 891 216 3000 multiplicity_b_pos 890 259 3000
+end
+relationcanvas 132112 relation_ref 149008 // <association>
+  from ref 130192 z 2001 to ref 129424
+  no_role_a no_role_b
+  multiplicity_a_pos 1182 523 3000 multiplicity_b_pos 1213 683 3000
+end
+relationcanvas 133264 relation_ref 149648 // <generalisation>
+  decenter_begin 535
+  decenter_end 808
+  from ref 133008 z 2001 to ref 132880
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 133392 relation_ref 149776 // <generalisation>
+  decenter_begin 503
+  decenter_end 261
+  from ref 133136 z 2001 to ref 132880
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 134032 relation_ref 149904 // <association>
+  from ref 132880 z 2006 to ref 129552
+  no_role_a no_role_b
+  multiplicity_a_pos 548 468 3000 multiplicity_b_pos 486 473 3000
+end
+relationcanvas 134416 relation_ref 156432 // <association>
+  from ref 129424 z 2001 to ref 134160
+  no_role_a no_role_b
+  multiplicity_a_pos 1349 429 3000 multiplicity_b_pos 1274 433 3000
+end
+relationcanvas 134544 relation_ref 156560 // <generalisation>
+  decenter_begin 504
+  decenter_end 560
+  from ref 134288 z 2001 to ref 134160
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 134800 relation_ref 163088 // <generalisation>
+  from ref 134672 z 2001 to ref 132880
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 135312 relation_ref 163216 // <association>
+  decenter_begin 421
+  from ref 135056 z 2006 to ref 134672
+  no_role_a no_role_b
+  multiplicity_a_pos 188 605 3000 multiplicity_b_pos 187 725 3000
+end
+relationcanvas 136720 relation_ref 170256 // <generalisation>
+  decenter_begin 540
+  decenter_end 949
+  from ref 136464 z 2006 to ref 135056
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 136848 relation_ref 170384 // <generalisation>
+  decenter_begin 209
+  decenter_end 108
+  from ref 136592 z 2006 to ref 135056
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 137104 relation_ref 176912 // <generalisation>
+  from ref 136976 z 2001 to ref 128400
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+preferred_whz 0 0 1
+end

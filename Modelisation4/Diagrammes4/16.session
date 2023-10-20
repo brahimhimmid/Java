@@ -1,0 +1,40 @@
+window_sizes 1920 1001 322 1592 947 0
+
+diagrams
+  active  classdiagram_ref 128016 // jeu de puissance 4
+    1592 947 100 A1 0 8
+end
+show_stereotypes
+selected usecasediagram_ref 134544 // uc jeu
+open
+  usecaseview_ref 134544 // uc ité 4
+  class_ref 128016 // Controleur
+  class_ref 128144 // Ihm
+  classrelation_ref 128912 // <association>
+  class_ref 128400 // Joueur
+  classrelation_ref 135440 // <generalisation>
+  classrelation_ref 142736 // <association>
+  classrelation_ref 142992 // <association>
+  classrelation_ref 135568 // <generalisation>
+  attribute_ref 135696 // jetonCourant
+  attribute_ref 135568 // jeton2
+  attribute_ref 136208 // rotationsRestantesCourantes
+  attribute_ref 136080 // rotationsRestantes2
+  operation_ref 143248 // initialiserJeu
+  operation_ref 151312 // etat
+  operation_ref 151440 // jouerCoup
+  classrelation_ref 143120 // <association>
+  class_ref 141840 // Tas
+  class_ref 141968 // CoupNim
+  class_ref 148496 // <<interface>> ICoupP4
+  class_ref 148752 // CoupP4
+  class_ref 149008 // CoupColonne
+  operation_ref 167184 // strategieCoup
+  class_ref 155664 // <<interface>> IStrategieIANim
+  class_ref 155792 // StrategieRandom
+  class_ref 162320 // CoupIA
+  operation_ref 186896 // gererCoupIA
+  operation_ref 187152 // gererCoupIA
+  operation_ref 187024 // gererCoupIA
+end
+end

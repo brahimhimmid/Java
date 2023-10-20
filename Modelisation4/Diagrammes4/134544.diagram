@@ -1,0 +1,45 @@
+format 224
+
+classcanvas 128016 class_ref 128400 // Joueur
+  simpleclassdiagramsettings end
+  xyz 88 181 2000
+end
+usecasecanvas 128528 usecase_ref 141200 // Jouer à un jeu
+  xyzwh 690 227 3005 64 32 label_xy 681 259
+end
+usecasecanvas 129296 usecase_ref 141712 // Jouer au Jeu de nim
+  xyzwh 451 109 3005 64 32 label_xy 425 141
+end
+usecasecanvas 129424 usecase_ref 141840 // Jouer à Puissance 4
+  xyzwh 452 361 3005 64 32 label_xy 425 393
+end
+usecasecanvas 130320 usecase_ref 148368 // Jouer à 1 joueur
+  xyzwh 259 96 3005 64 32 label_xy 245 128
+end
+usecasecanvas 130448 usecase_ref 148496 // Jouer à 2 joueurs
+  xyzwh 248 386 3005 64 32 label_xy 237 416
+end
+simplerelationcanvas 130064 simplerelation_ref 141456
+  decenter_begin 140
+  from ref 129296 z 3006 stereotype "<<include>>" xyz 537.5 184 3000 to ref 128528
+end
+simplerelationcanvas 130192 simplerelation_ref 141584
+  from ref 129424 z 3006 stereotype "<<include>>" xyz 562 308.5 3000 to ref 128528
+end
+line 130576 ----
+  from ref 128016 z 3006 to ref 130320
+line 130704 ----
+  from ref 128016 z 3006 to ref 130448
+simplerelationcanvas 130832 simplerelation_ref 148112
+  from ref 130320 z 3006 stereotype "<<include>>" xyz 349.5 116 3000 to ref 129296
+end
+simplerelationcanvas 130960 simplerelation_ref 148240
+  from ref 130448 z 3006 stereotype "<<include>>" xyz 358.5 298 3000 to ref 129296
+end
+simplerelationcanvas 131088 simplerelation_ref 148368
+  from ref 130320 z 3006 stereotype "<<include>>" xyz 303 218.5 3000 to ref 129424
+end
+simplerelationcanvas 131216 simplerelation_ref 148496
+  from ref 130448 z 3006 stereotype "<<include>>" xyz 345 386.5 3000 to ref 129424
+end
+end
